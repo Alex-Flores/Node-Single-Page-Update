@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: rgb(140, 163, 5);
+    text-decoration: none;
+    margin-left: 1rem;
+}
+nav{
+    width: 100%;
+    height: 5rem;
+    background: rgb(68, 70, 75);
+    color: whitesmoke;
+}
+.logo{
+    width: 8rem;
+    height: 4rem;
+    float: left;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+.logo > h3{
+    font-size: 1.6rem;
+}
+.men{
+    float: right;
+    width: 50rem;
+    height: 5rem;
+}
+.men > ul{
+    list-style: none;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+.men > ul > li{
+    width: 10rem;
+    height: 2rem;
+    float: left;
+    padding-right: 0.5rem;
+    font-weight: 900;
+}
+.card-button{
+    height: 22rem;
+    display: flex;
+    justify-content: center;
+}
+.form-button{
+    width: 70rem;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.form-button > button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 50px 80px;
+}
+.form-button > button > h3{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+}
+.form-button > button > p{
+    font-size: 1rem;
+    margin: 15px 0px 15px 0px;
+}
+.form-button > button > p:last-of-type{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.form-button > button > span{
+    font-weight: bold;
+    color: rgb(151, 142, 142);
+}
+.btn-1{
+    border: 3px solid rgb(7, 143, 255);
+}
+.btn-2{
+    border: 3px solid rgb(166, 19, 211);
+}
+.btn-3{
+    border: 3px solid yellow;
+}
+.card-form{
+    height: 25rem;
+    width: 70rem;
+    margin: auto;
+}
+.card-form > span{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+.card-form > h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+.name{
+    display: flex;
+    justify-content: center;
+}
+.name > input{
+    width: 45%;
+    margin: 1rem 0.5rem 0px 0.5rem;
+    border: 2px solid rgb(219, 196, 196);
+    outline: none;
+    padding: 5px 5px 5px 5px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+}
+.form-date > input:nth-child(2n){
+    width: 91.5%;
+    height: 2rem;
+    display: flex;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 5px 5px 5px 5px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid rgb(219, 196, 196);
+}
+.form-date > input, select{
+    width: 44%;
+    height: 2rem;
+    margin-top: 2rem;
+    border: 2px solid rgb(219, 196, 196);
+    outline: none;
+    font-size: 1.1rem;
+}
+.form-date > input:nth-child(2n+1){
+    margin-left: 3rem;
+    border-radius: 3px;
+}
+.form-date > label{
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: teal;
+}
+.form-date > label:nth-child(2n){
+    margin-left: 3rem;
+}
+.form-date > select{
+    margin-left: 1.5rem;
+    border-radius: 3px;
+}
+.total{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    width: 91%;
+    height: 2rem;
+    background-color: rgb(151, 161, 255);
+    margin: auto;
+    margin-top: 1.5rem;
+}
+.form-date > center{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+}
+.form-date > center > button{
+    width: 10rem;
+    height: 2.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background-color: rgb(189, 207, 89);
+    border: 2px solid rgb(161, 177, 72);
+    border-radius: 3px;
+}
+
+footer{
+    width: 100%;
+    height: 10rem;
+    background: rgb(35, 59, 104);
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > ul{
+    width: 75%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+footer > ul > li{
+    width: 7rem;
+    height: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

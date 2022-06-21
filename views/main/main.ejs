@@ -1,0 +1,24 @@
+<section class="card-form">
+    <span>VENTA</span>
+    <h2>VALOR DE TICKET $200</h2>
+    <form class="form-date" action="" id="transaccion_form">
+        <div class="name">
+            <input type="text" id="nombre_cliente" placeholder="Nombre">
+            <input type="text" id="apellido_cliente" placeholder="Apellido">
+        </div>
+        <input type="email" name="" id="email_cliente" placeholder="Correo"><br>
+        <label for="">Cantidad</label>
+        <input type="number" id="cantidad_tickets" placeholder="cantidad">
+        <label for="">Categoría</label>
+        <select name="" id="tipo_categoria" onchange="seleccionarOpcion();">
+            <option value="Estudiante">Estudiante</option>
+            <option value="Trainee">Trainee</option>
+            <option value="Junior">Junior</option>
+        </select>
+        <div class="total" id="total_pagar">Total a Pagar: $</div>
+        <center>
+            <button type="reset" onclick="elimino()">Borrar</button>
+            <button type="button" onclick="presiono()">Resumen</button>
+        </center>
+    </form>
+</section>

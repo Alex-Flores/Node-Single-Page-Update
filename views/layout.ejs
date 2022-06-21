@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tickets</title>
+</head>
+<body>
+    <%- include('partials/nav') -%>
+    <section class="card-button">
+        <%- include('form/form') -%>
+    </section>
+    <%- include('main/main') -%>
+    <%- include('footer/footer') -%>
+    <script>
+        function presiono(){
+            let cantidad = document.getElementById("cantidad_tickets").value;
+            let categoria = document.getElementById("tipo_categoria").value;
+            let total_facturado = 0;
+            let impo = 0;
+            let descuento = 0;
+            if(categoria=="Estudiante"){
+                impo = 80;
+            }else if(categoria=="Trainee"){
+                impo = 50;
+            }else{
+                impo = 15;
+            }
+            let valor = 200;
+            descuento = (valor/100) * impo;
+            total_facturado = (valor - descuento) * cantidad;
+            document.getElementById("total_pagar").innerText = "Total a Pagar: $ " + total_facturado;
+        }
+        function elimino(){
+            const form = document.getElementById("transaccion_form");
+            document.getElementById("total_pagar").innerText = "Total a Pagar: $ " + 0;
+            form.reset();
+        }
+    </script>
+</body>
+</html>
